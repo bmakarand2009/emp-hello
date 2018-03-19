@@ -40,10 +40,11 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'factory_girl_rails', '4.4.1' # factories for testing
-gem 'rspec', '~> 2.14.1' # Rspec testing framework
-gem 'rspec-rails', '~> 2.14.1' # Rails plugin for rspec
-gem 'rspec-mocks' # Mocks support for rspec
-gem 'factory_girl_rails', '4.4.1' # factories for testing
-gem 'rspec_junit_formatter'
+group :development, :test do
+  gem 'factory_girl_rails', '4.4.1' # factories for testing
+  gem 'rspec', '~> 2.14.1' # Rspec testing framework
+  gem 'rspec-rails', '~> 2.14.1' # Rails plugin for rspec
+  gem 'rspec-mocks' # Mocks support for rspec
+  gem 'factory_girl_rails', '4.4.1' # factories for testing
+  gem 'rspec_junit_formatter'
+end
