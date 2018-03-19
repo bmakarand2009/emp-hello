@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.16'
+gem 'rake', '~> 10.5.0' # rake 11.x has a deprecation warning for #last_comment
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -11,6 +13,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -38,3 +41,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'factory_girl_rails', '4.4.1' # factories for testing
+gem 'rspec', '~> 2.14.1' # Rspec testing framework
+gem 'rspec-rails', '~> 2.14.1' # Rails plugin for rspec
+gem 'rspec-mocks' # Mocks support for rspec
+gem 'factory_girl_rails', '4.4.1' # factories for testing
+gem 'rspec_junit_formatter'
